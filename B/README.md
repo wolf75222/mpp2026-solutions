@@ -1,25 +1,25 @@
-# B : propagation d'onde 3D (Gauss-Seidel)
+# B: 3D wave propagation (Gauss-Seidel)
 
-Équation d'onde sur une grille N³ (N ≤ 480, T ≤ 160) : laplacien d'ordre 12, un balayage de Gauss-Seidel en place par pas, source de Ricker. La sortie doit être bit-exacte, et `-ffp-contract=off` est imposé.
+Wave equation on an N³ grid (N ≤ 480, T ≤ 160): 12th-order Laplacian, one in-place Gauss-Seidel sweep per step, Ricker source. The output must be bit-exact, and `-ffp-contract=off` is mandatory.
 
-**Speedup 137,5** : ≈ 0,975 s au juge contre ≈ 134 s pour la référence.
+**Speedup 137.5**: ≈ 0.975 s on the judge vs ≈ 134 s for the reference.
 
-## Optimisations
+## Optimizations
 
-- **Pipeline temporel sans barrière** :
-  - les tâches (pas, bande) s'enchaînent sur tous les pas ;
-  - chaque tâche attend trois drapeaux point à point (acquire/release) ;
-  - les schémas synchronisés à chaque pas plafonnent vers 13× ; ce pipeline lève ce plafond ;
-  - chaque point est calculé avec la même expression flottante que la référence, d'où les mêmes bits.
-- **Groupes de bandes par L3** : chaque groupe a son propre compteur et son premier contact mémoire.
-- **Noyaux AVX2 en assembleur** (`kern.S`) : environ −13 % au juge. Aucune FMA : multiplications et additions restent séparées, comme sous `-ffp-contract=off`.
-- **Réglages d'exécution** :
-  - SMT utilisé (`OMP_PLACES=threads`), attente active ;
-  - mémoire préparée à l'avance (`MADV_POPULATE_WRITE`) et coûts fixes réduits.
-- **Flags** : ceux du Makefile fourni, plus `-fopenmp`.
+- **Barrier-free temporal pipeline**:
+  - (step, band) tasks chain across all steps;
+  - each task waits on three point-to-point flags (acquire/release);
+  - schemes that synchronize at every step cap at about 13×; this pipeline removes that cap;
+  - every point is computed with the reference's floating-point expression, so the bits are identical.
+- **Band groups per L3**: each group has its own counter and first-touch memory.
+- **Hand-written AVX2 kernels** (`kern.S`): about −13% on the judge. No FMA: multiplies and adds stay separate, as under `-ffp-contract=off`.
+- **Runtime settings**:
+  - SMT used (`OMP_PLACES=threads`), active waiting;
+  - memory prepared up front (`MADV_POPULATE_WRITE`), reduced fixed costs.
+- **Flags**: those of the provided Makefile, plus `-fopenmp`.
 
-Écartés après mesure : le GPU (création du contexte CUDA trop coûteuse au juge) et MPI.
+Rejected after measurement: GPU (CUDA context creation too costly on the judge) and MPI.
 
 ## Validation
 
-Acceptance : 782/782 champs exacts.
+Acceptance: 782/782 fields exact.

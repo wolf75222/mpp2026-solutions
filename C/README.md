@@ -1,33 +1,33 @@
-# C : requête dans un quadtree
+# C: quadtree range query
 
-Le programme génère n points avec le `rand()` de la glibc (`srand(42)`) et les range dans un quadtree (au plus 4 points par feuille). Il imprime ensuite les points d'une requête rectangulaire au format `(%.1lf,%.1lf)`. Le `intercept()` de la référence ne teste que les coins ; ses faux élagages doivent être reproduits.
+The program generates n points with glibc's `rand()` (`srand(42)`) and stores them in a quadtree (at most 4 points per leaf). It then prints the points of a rectangular query as `(%.1lf,%.1lf)`. The reference `intercept()` only tests corners; its false prunings must be reproduced.
 
-**Speedup 4411** : ≈ 5,4 ms au juge contre ≈ 24 s pour la référence.
+**Speedup 4411**: ≈ 5.4 ms on the judge vs ≈ 24 s for the reference.
 
-## Optimisations
+## Optimizations
 
-- **Construction limitée à la requête** :
-  - seuls les nœuds dont `intercept()` réussit depuis la racine sont construits ;
-  - les faux élagages de la référence sont donc reproduits par construction ;
-  - le travail se réduit à la génération plus O(m · profondeur).
-- **Émulation exacte de `rand()`** :
-  - générateur glibc TYPE_3 ;
-  - saut en avant exact (x^j mod x³¹ − x²⁸ − 1), d'où 16 sous-flux entrelacés et une génération parallèle ;
-  - filtrage en entiers sur `rand() % 10⁶`.
-- **Noyau AVX2 en assembleur** pour la phase de génération et de filtrage (`p1asm.S`).
-- **Formateur `%.1f` exact** : arrondi au pair, `-0.0` compris.
-- **Nombre de threads** dimensionné par phase selon le travail, la création d'un thread coûtant environ 37 µs.
-- **Chemin rapide sans libc** :
-  - binaire statique (`-nostdlib`), `_start` propre, appels système directs ;
-  - threads `clone`, barrières futex ;
-  - gain de −15 à −21 % par rapport à la même version liée à la glibc.
-  - Toute entrée hors du chemin prouvé exact repart par `execve` vers `qtd`, le même code lié à la glibc.
-- **Script** : `unset OMP_NUM_THREADS`, car le juge exporte `OMP_NUM_THREADS=1`.
+- **Query-limited construction**:
+  - only nodes whose `intercept()` succeeds all the way from the root are built;
+  - the reference's false prunings are therefore reproduced by construction;
+  - the work reduces to generation plus O(m · depth).
+- **Exact `rand()` emulation**:
+  - glibc TYPE_3 generator;
+  - exact jump-ahead (x^j mod x³¹ − x²⁸ − 1), giving 16 interleaved substreams and parallel generation;
+  - integer filtering on `rand() % 10⁶`.
+- **Hand-written AVX2 kernel** for the generation and filtering phase (`p1asm.S`).
+- **Exact `%.1f` formatter**: round-half-even, `-0.0` included.
+- **Thread count** sized per phase from the work, since creating a thread costs about 37 µs.
+- **libc-free fast path**:
+  - static binary (`-nostdlib`), own `_start`, raw system calls;
+  - `clone` threads, futex barriers;
+  - 15–21% faster than the same code linked against glibc.
+  - Any input outside the proven-exact path is handed by `execve` to `qtd`, the same code linked against glibc.
+- **Script**: `unset OMP_NUM_THREADS`, because the judge exports `OMP_NUM_THREADS=1`.
 
 ## Validation
 
-Acceptance : 33 441 exécutions sur 8 610 entrées, sans écart.
+Acceptance: 33,441 runs on 8,610 inputs, no mismatch.
 
-## Fichiers
+## Files
 
-`qc.h` contient les deux programmes : `qf.c` définit `QF` (chemin sans libc, binaire `qt`), `qt.c` donne le repli `qtd`. Ce découpage vient de la limite d'upload de BOCA (≈ 32 Ko).
+`qc.h` holds both programs: `qf.c` defines `QF` (libc-free path, binary `qt`), and `qt.c` builds the `qtd` fallback. This layout comes from BOCA's upload limit (≈ 32 KB).

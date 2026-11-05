@@ -1,28 +1,28 @@
-# A : écoulement et bassins versants
+# A: terrain flow and watersheds
 
-Directions D8, accumulation de flux et bassins versants sur un MNT lu sur stdin. Sortie texte identique octet pour octet à la référence C++.
+D8 flow directions, flow accumulation and watersheds on a DEM read from stdin. The text output matches the C++ reference byte for byte.
 
-**Speedup 4115** : ≈ 15,1 ms au juge contre ≈ 62 s pour la référence.
+**Speedup 4115**: ≈ 15.1 ms on the judge vs ≈ 62 s for the reference.
 
-## Optimisations
+## Optimizations
 
-- **E/S exactes** : 77 % du temps de la référence est de l'iostream.
-  - Analyseur rapide : chemin de Clinger, exact pour une mantisse < 2²⁴ et |e10| ≤ 10, sinon repli `strtof`.
-  - `%g` de la glibc reproduit, vérifié sur les 2³² motifs de float.
-  - stdin lu par `mmap`, sortie écrite en gros blocs.
-- **Accumulation en O(V)** au lieu des balayages répétés : degré entrant, puis marches où le dernier contributeur arrivé poursuit.
-- **Bassins** numérotés par le rang du plus petit indice, comme la référence.
-- **Passe fusionnée** : lecture et formatage du terrain en une seule passe, sans copie intermédiaire.
-- **`dtm`, jusqu'à 4 M de cellules** :
-  - pthreads épinglés, créés en arbre, barrières futex ;
-  - pas de runtime OpenMP, libstdc++ statique ;
-  - un seul thread pour les petites grilles.
-- **`dtm_par`, au-delà de 4 M de cellules** : programme pthreads séparé, lancé par `execv`. Environ 0,40× le temps de la version OpenMP précédente sur ROMEO.
+- **Exact I/O**: iostream accounts for 77% of the reference time.
+  - Fast parser: Clinger's fast path, exact for a mantissa < 2²⁴ and |e10| ≤ 10, falling back to `strtof` otherwise.
+  - glibc's `%g` reproduced, checked against all 2³² float bit patterns.
+  - stdin read through `mmap`, output written in large blocks.
+- **O(V) accumulation** instead of repeated sweeps: in-degrees, then walks where the last arriving contributor carries on.
+- **Watersheds** numbered by the rank of their smallest index, as in the reference.
+- **Fused pass**: parsing and terrain formatting in one pass, with no intermediate copy.
+- **`dtm`, up to 4M cells**:
+  - pinned pthreads created as a tree, futex barriers;
+  - no OpenMP runtime, static libstdc++;
+  - a single thread for small grids.
+- **`dtm_par`, above 4M cells**: a separate pthread program started with `execv`. About 0.40× the time of the previous OpenMP version on ROMEO.
 
 ## Validation
 
-Acceptance indépendante : 19 567 exécutions pour `dtm`, 377/377 cas au-delà de 4 M pour `dtm_par`, cas dégénérés compris.
+Independent acceptance: 19,567 runs for `dtm`, 377/377 cases above 4M cells for `dtm_par`, degenerate cases included.
 
-## Fichiers
+## Files
 
-`all.h` contient les deux programmes : `dtm.cpp` définit `A_PART_DTM` avant de l'inclure, `dtm_par.cpp` l'inclut tel quel. Ce découpage vient de la limite d'upload de BOCA (≈ 32 Ko). Ici, `all.h` est réindenté ; sous GCC 9.4, il donne les mêmes binaires que le fichier soumis (`../submissions/A_ys_nc.zip`).
+`all.h` holds both programs: `dtm.cpp` defines `A_PART_DTM` before including it, and `dtm_par.cpp` includes it as is. This layout comes from BOCA's upload limit (≈ 32 KB). Here `all.h` is re-indented; under GCC 9.4 it builds the same binaries as the submitted file (`../submissions/A_ys_nc.zip`).
