@@ -18,7 +18,7 @@
 | 110 | 14h42 | A | [`110_A.zip`](old/110_A.zip) | **×623.86** |  |
 | 111 | 14h42 | B | [`111_B_cpu.zip`](old/111_B_cpu.zip) | **×89.93** |  |
 | 112 | 14h43 | B | [`112_B_gpu.zip`](old/112_B_gpu.zip) | ×88.74 |  |
-| 117 | 14h57 | B | [`117_B_gpu_diag.zip`](old/117_B_gpu_diag.zip) | ×9.90 | probe |
+| 117 | 14h57 | B | `B_gpu_diag` | ×9.90 | probe, not included |
 | 124 | 15h10 | B | [`124_B_cpu_smt.zip`](old/124_B_cpu_smt.zip) | **×111.67** |  |
 | 125 | 15h10 | B | [`125_B_cpu_t64.zip`](old/125_B_cpu_t64.zip) | ×57.51 |  |
 | 126 | 15h11 | B | [`126_B_cpu.zip`](old/126_B_cpu.zip) | ×103.88 |  |
@@ -56,33 +56,33 @@
 | 165 | 16h47 | B | [`165_B_smt_sock.zip`](old/165_B_smt_sock.zip) | ×89.93 | source |
 | 167 | 16h48 | C | [`167_C_t8.zip`](old/167_C_t8.zip) | ×1,022.63 |  |
 | 168 | 16h48 | C | [`168_C_t4.zip`](old/168_C_t4.zip) | **×1,030.93** |  |
-| 170 | 16h51 | C | [`170_C_amp9.zip`](old/170_C_amp9.zip) | ×113.96 | probe |
-| 172 | 16h51 | C | [`172_C_amp9_t1.zip`](old/172_C_amp9_t1.zip) | ×117.43 | probe |
-| 176 | 17h02 | C | [`176_C_info1.zip`](old/176_C_info1.zip) | ×33.76 | probe |
-| 177 | 17h02 | C | [`177_C_info2.zip`](old/177_C_info2.zip) | ×176.91 | probe |
-| 178 | 17h02 | C | [`178_C_diag_fast.zip`](old/178_C_diag_fast.zip) | ×288.10 | source, probe |
-| 179 | 17h03 | C | [`179_C_diag_team.zip`](old/179_C_diag_team.zip) | ×358.30 | source, probe |
-| 180 | 17h03 | C | [`180_C_diag_p1.zip`](old/180_C_diag_p1.zip) | ×68.02 | source, probe |
-| 181 | 17h03 | C | [`181_C_diag_core.zip`](old/181_C_diag_core.zip) | ×51.53 | source, probe |
-| 182 | 17h04 | C | [`182_C_diag_out.zip`](old/182_C_diag_out.zip) | ×51.29 | source, probe |
-| 183 | 17h04 | C | [`183_C_diag_read.zip`](old/183_C_diag_read.zip) | ×369.04 | source, probe |
+| 170 | 16h51 | C | `C_amp9` | ×113.96 | probe, not included |
+| 172 | 16h51 | C | `C_amp9_t1` | ×117.43 | probe, not included |
+| 176 | 17h02 | C | `C_info1` | ×33.76 | probe, not included |
+| 177 | 17h02 | C | `C_info2` | ×176.91 | probe, not included |
+| 178 | 17h02 | C | `C_diag_fast` | ×288.10 | probe, not included |
+| 179 | 17h03 | C | `C_diag_team` | ×358.30 | probe, not included |
+| 180 | 17h03 | C | `C_diag_p1` | ×68.02 | probe, not included |
+| 181 | 17h03 | C | `C_diag_core` | ×51.53 | probe, not included |
+| 182 | 17h04 | C | `C_diag_out` | ×51.29 | probe, not included |
+| 183 | 17h04 | C | `C_diag_read` | ×369.04 | probe, not included |
 | 184 | 17h04 | C | [`109_C.zip`](old/109_C.zip) | **×1,036.76** |  |
 | 187 | 17h12 | C | [`187_C_unset.zip`](old/187_C_unset.zip) | **×3,703.13** |  |
-| 188 | 17h13 | C | not recovered | ×38.74 | probe |
-| 189 | 17h13 | A | [`189_A_cal50.zip`](old/189_A_cal50.zip) | ×803.21 | probe |
+| 188 | 17h13 | C | `C_info2_unset` | ×38.74 | probe, not included |
+| 189 | 17h13 | A | `A_cal50` | ×803.21 | probe, not included |
 | 190 | 17h13 | A | [`158_A_twork_sh.zip`](old/158_A_twork_sh.zip) | ×2,774.67 |  |
 | 191 | 17h15 | B | [`137_B_smt_d.zip`](old/137_B_smt_d.zip) | ×114.53 |  |
 | 192 | 17h15 | C | [`109_C.zip`](old/109_C.zip) | ×1,024.68 |  |
 | 194 | 17h39 | A | [`194_A_fast.zip`](old/194_A_fast.zip) | ×1,929.00 | source |
-| 196 | 17h41 | A | [`196_A_diag_out.zip`](old/196_A_diag_out.zip) | ×155.68 | source, probe |
-| 197 | 17h41 | A | [`197_A_diag_acc.zip`](old/197_A_diag_acc.zip) | ×168.52 | source, probe |
-| 198 | 17h41 | A | [`198_A_diag_read.zip`](old/198_A_diag_read.zip) | ×477.39 | source, probe |
-| 199 | 17h41 | A | [`199_A_diag_fmt.zip`](old/199_A_diag_fmt.zip) | ×153.68 | source, probe |
-| 200 | 17h42 | A | [`200_A_diag_dir.zip`](old/200_A_diag_dir.zip) | ×329.30 | source, probe |
-| 201 | 17h42 | A | [`201_A_diag_ws.zip`](old/201_A_diag_ws.zip) | ×166.07 | source, probe |
+| 196 | 17h41 | A | `A_diag_out` | ×155.68 | probe, not included |
+| 197 | 17h41 | A | `A_diag_acc` | ×168.52 | probe, not included |
+| 198 | 17h41 | A | `A_diag_read` | ×477.39 | probe, not included |
+| 199 | 17h41 | A | `A_diag_fmt` | ×153.68 | probe, not included |
+| 200 | 17h42 | A | `A_diag_dir` | ×329.30 | probe, not included |
+| 201 | 17h42 | A | `A_diag_ws` | ×166.07 | probe, not included |
 | 202 | 17h42 | A | [`158_A_twork_sh.zip`](old/158_A_twork_sh.zip) | ×2,723.72 |  |
-| 203 | 17h43 | B | not recovered | ×2.33 | probe |
-| 204 | 17h44 | B | not recovered | ×96.40 |  |
+| 203 | 17h43 | B | `B_mpi_probe` | ×2.33 | probe, not included |
+| 204 | 17h44 | B | `B_mpi_np1` (not recovered) | ×96.40 |  |
 | 205 | 17h45 | B | [`137_B_smt_d.zip`](old/137_B_smt_d.zip) | **×117.54** |  |
 | 206 | 17h45 | C | [`187_C_unset.zip`](old/187_C_unset.zip) | **×3,718.05** |  |
 | 210 | 18h16 | A | [`158_A_twork_sh.zip`](old/158_A_twork_sh.zip) | ×2,028.93 |  |
