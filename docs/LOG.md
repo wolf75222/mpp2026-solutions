@@ -1,13 +1,13 @@
 # Log
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/total_score_dark.svg">
-  <img alt="Total BOCA score over the contest" src="docs/total_score.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="total_score_dark.svg">
+  <img alt="Total BOCA score over the contest" src="total_score.svg">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/boca_scores_dark.svg">
-  <img alt="BOCA speedup per problem over the contest" src="docs/boca_scores.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="boca_scores_dark.svg">
+  <img alt="BOCA speedup per problem over the contest" src="boca_scores.svg">
 </picture>
 
 Local measurements on ROMEO (2× AMD EPYC 9654). Judge: AMD EPYC 7713, GCC 9.4.

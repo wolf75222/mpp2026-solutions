@@ -13,4 +13,4 @@
 | [B](B/) | 3D wave propagation | 137.50 |
 | [C](C/) | Quadtree range query | 4,410.95 |
 
-[Problem set](problemset.pdf) · [Log](LOG.md) · [Submitted zips](submissions/)
+[Problem set](problemset.pdf) · [Log](docs/LOG.md) · [Submitted zips](submissions/)
