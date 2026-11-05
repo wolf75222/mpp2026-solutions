@@ -1,22 +1,19 @@
+<div align="center">
+
 # Submissions
 
-Final zips (last submission of each problem):
-
-| Problem | Zip | md5 | Speedup |
-|---|---|---|---|
+| Problem | Final zip | md5 | Speedup |
+|:-:|:--|:--|--:|
 | A | [`A_ys_nc.zip`](A_ys_nc.zip) | 1872dbf9 | 4,115.23 |
 | B | [`B_fix.zip`](B_fix.zip) | 524328ab | 137.50 |
 | C | [`C_free_s.zip`](C_free_s.zip) | afea1efc | 4,410.95 |
 
-## All submissions
+## All 98 runs
 
-Every BOCA run, in order. Time is counted from the contest start. **Bold** marks a new best score for the problem.
-
-- `source`: the exact zip was not recovered; the file is the source version it was built from (same code, with comments).
-- `probe`: timing probe, not a solution.
+**Bold**: new best score for the problem · `source`: exact zip not recovered, source version with comments · `probe`: timing probe, not a solution
 
 | Run | Time | Problem | Zip | Speedup | Note |
-|---|---|---|---|---|---|
+|--:|--:|:-:|:--|--:|:--|
 | 109 | 14h41 | C | [`109_C.zip`](old/109_C.zip) | **1,022.71** |  |
 | 110 | 14h42 | A | [`110_A.zip`](old/110_A.zip) | **623.86** |  |
 | 111 | 14h42 | B | [`111_B_cpu.zip`](old/111_B_cpu.zip) | **89.93** |  |
@@ -115,3 +112,9 @@ Every BOCA run, in order. Time is counted from the contest start. **Bold** marks
 | 310 | 22h54 | A | [`296_A_fast10_nc.zip`](old/296_A_fast10_nc.zip) | 3,901.09 |  |
 | 534 | 26h22 | A | [`534_A_ys_nc.zip`](old/534_A_ys_nc.zip) | **4,115.23** |  |
 | 535 | 26h22 | C | [`535_C_free_s.zip`](old/535_C_free_s.zip) | **4,410.95** |  |
+
+Time since contest start.
+
+[← Back](../README.md)
+
+</div>
