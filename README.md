@@ -1,23 +1,16 @@
-# 21st Parallel Programming Marathon (SSCAD 2026)
+# 21st Parallel Programming Marathon · SSCAD 2026
 
-Team `root@romeo:~#_rm_-rf_/bin` (Remote): **#1**. Problem set: [problemset.pdf](problemset.pdf).
-
-| Problem | Speedup | t_ref | t |
-|---|---|---|---|
-| [A](A/) | 4115.23 | 62 s | 15.1 ms |
-| [B](B/) | 137.50 | 134 s | 0.975 s |
-| [C](C/) | 4410.95 | 24 s | 5.4 ms |
-| **Total** | **8663.68** | | |
+**#1** · team `root@romeo:~#_rm_-rf_/bin` · total speedup **8,663.68**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/boca_scores_dark.svg">
-  <img alt="BOCA speedup per problem over the contest" src="docs/boca_scores.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/total_score_dark.svg">
+  <img alt="Total BOCA score over the contest" src="docs/total_score.svg">
 </picture>
 
-Judge: AMD EPYC 7713 (128 cores / 256 threads), GCC 9.4.
+| | Problem | Speedup |
+|---|---|---|
+| [A](A/) | Terrain flow and watersheds | 4,115.23 |
+| [B](B/) | 3D wave propagation | 137.50 |
+| [C](C/) | Quadtree range query | 4,410.95 |
 
-Steps, measurements and BOCA history: [LOG.md](LOG.md). `submissions/` holds the zips submitted to BOCA.
-
-```sh
-cd A && make all && ./A < input > output
-```
+[Problem set](problemset.pdf) · [Log](LOG.md) · [Submitted zips](submissions/)

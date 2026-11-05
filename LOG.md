@@ -1,6 +1,11 @@
 # Log
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/total_score_dark.svg">
+  <img alt="Total BOCA score over the contest" src="docs/total_score.svg">
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/boca_scores_dark.svg">
   <img alt="BOCA speedup per problem over the contest" src="docs/boca_scores.svg">
 </picture>
