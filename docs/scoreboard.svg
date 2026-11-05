@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="684" viewBox="0 0 960 684" font-family='system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif' role="img" aria-label="Final BOCA scoreboard">
+<text x="64" y="34" font-size="18" font-weight="600" fill="#0b0b0b">Final scoreboard</text>
+<text x="64" y="58" font-size="12.5" fill="#52514e">21st Parallel Programming Marathon · total speedup over A, B and C, rounded</text>
+<text x="84" y="84" font-size="11" fill="#898781" text-anchor="end">#</text>
+<text x="108" y="84" font-size="11" fill="#898781">Team</text>
+<text x="470" y="84" font-size="11" fill="#898781" text-anchor="middle">A</text>
+<text x="490" y="84" font-size="11" fill="#898781" text-anchor="middle">B</text>
+<text x="510" y="84" font-size="11" fill="#898781" text-anchor="middle">C</text>
+<text x="896" y="84" font-size="11" fill="#898781" text-anchor="end">Total</text>
+<line x1="64" x2="896" y1="92" y2="92" stroke="#c3c2b7" stroke-width="1"/>
+<rect x="56" y="98" width="848" height="30" rx="6" fill="#2a78d6" fill-opacity="0.10"/>
+<text x="84" y="117.5" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">1</text>
+<text x="108" y="117.5" font-size="13" font-weight="600" fill="#0b0b0b">root@romeo:~#_rm_-rf_/bin</text>
+<circle cx="470" cy="113.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="113.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="113.0" r="4.5" fill="#1baf7a"/>
+<path d="M548,109.0 H816.0 Q820.0,109.0 820.0,113.0 V113.0 Q820.0,117.0 816.0,117.0 H548 Z" fill="#2a78d6"/>
+<text x="896" y="117.5" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">8,664</text>
+<line x1="64" x2="896" y1="130" y2="130" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="151.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">2</text>
+<text x="108" y="151.5" font-size="13" fill="#0b0b0b">root@romeo:~#_fork(main)_fork</text>
+<circle cx="470" cy="147.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="147.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="147.0" r="4.5" fill="#1baf7a"/>
+<path d="M548,143.0 H701.6 Q705.6,143.0 705.6,147.0 V147.0 Q705.6,151.0 701.6,151.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="151.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">5,019</text>
+<line x1="64" x2="896" y1="164" y2="164" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="185.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">3</text>
+<text x="108" y="185.5" font-size="13" fill="#0b0b0b">Caçadores de Preá Hipotético</text>
+<text x="418" y="185.0" font-size="10.5" fill="#898781" text-anchor="end">local</text>
+<circle cx="470" cy="181.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="181.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="181.0" r="4.5" fill="#1baf7a"/>
+<path d="M548,177.0 H645.3 Q649.3,177.0 649.3,181.0 V181.0 Q649.3,185.0 645.3,185.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="185.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">3,227</text>
+<line x1="64" x2="896" y1="198" y2="198" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="219.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">4</text>
+<text x="108" y="219.5" font-size="13" fill="#0b0b0b">LHRS MAISTRI</text>
+<circle cx="470" cy="215.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="215.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="215.0" r="4.5" fill="#1baf7a"/>
+<path d="M548,211.0 H591.4 Q595.4,211.0 595.4,215.0 V215.0 Q595.4,219.0 591.4,219.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="219.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">1,511</text>
+<line x1="64" x2="896" y1="232" y2="232" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="253.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">5</text>
+<text x="108" y="253.5" font-size="13" fill="#0b0b0b">Gold-Programação Perpendicular</text>
+<circle cx="470" cy="249.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="249.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="510" cy="249.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<path d="M548,245.0 H571.0 Q575.0,245.0 575.0,249.0 V249.0 Q575.0,253.0 571.0,253.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="253.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">859</text>
+<line x1="64" x2="896" y1="266" y2="266" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="287.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">6</text>
+<text x="108" y="287.5" font-size="13" fill="#0b0b0b">Extra Point</text>
+<circle cx="470" cy="283.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="283.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="283.0" r="4.5" fill="#1baf7a"/>
+<path d="M548,279.0 H549.8 Q551.6,279.0 551.6,280.8 V285.2 Q551.6,287.0 549.8,287.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="287.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">116</text>
+<line x1="64" x2="896" y1="300" y2="300" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="321.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">7</text>
+<text x="108" y="321.5" font-size="13" fill="#0b0b0b">Não sabemos contar</text>
+<circle cx="470" cy="317.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="317.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="317.0" r="4.5" fill="#1baf7a"/>
+<path d="M548,313.0 H549.4 Q550.8,313.0 550.8,314.4 V319.6 Q550.8,321.0 549.4,321.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="321.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">90</text>
+<line x1="64" x2="896" y1="334" y2="334" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="355.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">8</text>
+<text x="108" y="355.5" font-size="13" fill="#0b0b0b">só sabemos perpendiculares</text>
+<circle cx="470" cy="351.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="351.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="351.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<path d="M548,347.0 H549.2 Q550.4,347.0 550.4,348.2 V353.8 Q550.4,355.0 549.2,355.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="355.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">76</text>
+<line x1="64" x2="896" y1="368" y2="368" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="389.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">9</text>
+<text x="108" y="389.5" font-size="13" fill="#0b0b0b">Los Cóndores</text>
+<circle cx="470" cy="385.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="385.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="385.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<path d="M548,381.0 H549.2 Q550.3,381.0 550.3,382.2 V387.8 Q550.3,389.0 549.2,389.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="389.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">74</text>
+<line x1="64" x2="896" y1="402" y2="402" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="423.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">10</text>
+<text x="108" y="423.5" font-size="13" fill="#0b0b0b">alguém me aCUDA</text>
+<circle cx="470" cy="419.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="419.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="419.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<path d="M548,415.0 H549.1 Q550.2,415.0 550.2,416.1 V421.9 Q550.2,423.0 549.1,423.0 H548 Z" fill="#d6d5ce"/>
+<text x="896" y="423.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">70</text>
+<line x1="64" x2="896" y1="436" y2="436" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="457.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">11</text>
+<text x="108" y="457.5" font-size="13" fill="#0b0b0b">Paralelos do Sucesso</text>
+<text x="418" y="457.0" font-size="10.5" fill="#898781" text-anchor="end">local</text>
+<circle cx="470" cy="453.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="490" cy="453.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="453.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="896" y="457.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">20</text>
+<line x1="64" x2="896" y1="470" y2="470" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="491.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">12</text>
+<text x="108" y="491.5" font-size="13" fill="#0b0b0b">Los Pudús</text>
+<circle cx="470" cy="487.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="490" cy="487.0" r="4.5" fill="#eb6834"/>
+<circle cx="510" cy="487.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="896" y="491.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">18</text>
+<line x1="64" x2="896" y1="504" y2="504" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="525.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">13</text>
+<text x="108" y="525.5" font-size="13" fill="#0b0b0b">gold - Leo E Leo</text>
+<circle cx="470" cy="521.0" r="4.5" fill="#2a78d6"/>
+<circle cx="490" cy="521.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="510" cy="521.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="896" y="525.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">1</text>
+<line x1="64" x2="896" y1="538" y2="538" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="559.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">14</text>
+<text x="108" y="559.5" font-size="13" fill="#0b0b0b">gold-matheus_silveira</text>
+<circle cx="470" cy="555.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="490" cy="555.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="510" cy="555.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="896" y="559.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">0</text>
+<line x1="64" x2="896" y1="572" y2="572" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="593.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">14</text>
+<text x="108" y="593.5" font-size="13" fill="#0b0b0b">IME-Lucas</text>
+<circle cx="470" cy="589.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="490" cy="589.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="510" cy="589.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="896" y="593.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">0</text>
+<line x1="64" x2="896" y1="606" y2="606" stroke="#e1e0d9" stroke-width="1"/>
+<text x="84" y="627.5" font-size="13" fill="#52514e" text-anchor="end" style="font-variant-numeric: tabular-nums">14</text>
+<text x="108" y="627.5" font-size="13" fill="#0b0b0b">gold-lucas-rabaquim</text>
+<circle cx="470" cy="623.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="490" cy="623.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<circle cx="510" cy="623.0" r="3.5" fill="none" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="896" y="627.5" font-size="13" fill="#0b0b0b" text-anchor="end" style="font-variant-numeric: tabular-nums">0</text>
+<text x="64" y="666" font-size="11" fill="#898781">BOCA scoreboard at the end of the contest (Nov 4, 2026). Filled dot: problem solved. Test account omitted.</text>
+</svg>
