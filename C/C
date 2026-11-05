@@ -1,0 +1,3 @@
+#!/bin/sh
+unset OMP_NUM_THREADS
+exec ./qt
